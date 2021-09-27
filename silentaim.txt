@@ -27,7 +27,7 @@ RaycastParameters.FilterDescendantsInstances = {LocalPlayer.Character}
 -- // Variables \\ --
 -- [ Info ] --
 local Info = {
-   SilentAIMEnabled = false;
+   SilentAIMEnabled = true;
    TriggeredEnabled = false;
    ArmsCheckEnabled = true;
    TeamWhitelist = "";
@@ -39,7 +39,7 @@ local LastArrest = time()
 -- [ Interface ] --
 local FOVCircle = Drawing.new("Circle", {
    Thickness = 2.5,
-   Color = Color3.fromRGB(200, 200, 200),
+   Color = Color3.fromRGB(220, 188, 129),
    NumSides = 25,
    Radius = _G.FOV
 })
