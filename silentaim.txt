@@ -31,7 +31,7 @@ local Info = {
    TriggeredEnabled = false;
    ArmsCheckEnabled = true;
    TeamWhitelist = "";
-   FieldOfView = 250;
+   FieldOfView = 500;
 }
 
 local LastArrest = time()
@@ -168,7 +168,7 @@ local function Crash(Gun, BulletCount, ShotCount)
    for i = 1, BulletCount do
        BulletTable[i] = {
            Cframe = CFrame.new(),
-           Distance = math.huge
+           Distance = 10000
        }
    end
    for i = 1, ShotCount do
